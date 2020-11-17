@@ -30,7 +30,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: stpelleg-test-1
-        slot-name: Production
+        slot-name: production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E5341ADFE2642B48AC7953ADEF9EDC4 }}
         package: ${{ github.workspace }}/target/*.jar
 
